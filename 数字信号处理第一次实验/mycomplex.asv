@@ -1,0 +1,18 @@
+n = [-10:10];
+alpha = 0.1 + 0.3j;
+x = exp(alpha*n);
+%Êµ²¿
+subplot(2,2,1);
+stem(n,real(x),'filled');
+title('real part');
+xlabel('n');
+%Ðé²¿ 
+subplot(2,2,2);
+stem(n,imag(x),'filled');
+title('imaginary part');
+xlabel('n');
+
+subplot(2,2,3);
+stem(n,abs(x),'filled');
+title('magnitude part');
+xlabel('n');

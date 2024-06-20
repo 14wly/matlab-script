@@ -1,0 +1,8 @@
+function c=myconvo(a,b)
+M=length(a);
+N=length(b);
+C=zero(1,M+N-1);
+for n=2:(M+N)
+    tpmax=min(n-1,M);
+    tpmin=max
+end
