@@ -24,4 +24,12 @@ a=[1:10]
 b=[1:10]
 c=myconvo(a,b);
 stem(c)
+%下面为z变换部分
+figure
+b=[0,0,0,0.25,-0.5,0.0625];
+a=[1,-1,0.75,-0.25,0.0625];
+[delta,n]=impseq(0,0,7);
+x1=filter(b,a,delta);
+x2=[(n-2).*(1/2).*cos(pi*(n-2)/3).*stepseq(2,0,7)];
+stem(x2)
 
